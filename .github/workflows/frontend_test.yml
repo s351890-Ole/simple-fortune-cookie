@@ -1,4 +1,5 @@
 name: go_frontend
+
 on:
   push:
     branches: [ main ]
