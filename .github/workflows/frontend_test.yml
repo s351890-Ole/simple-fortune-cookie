@@ -42,7 +42,7 @@ jobs:
         tags: yagcis/fortune-cookie-backend:latest
 
     Docker-Start:
-      runs-on: ubuntu-latest
+      runs-on: self-hosted
       needs: [Build-Push-Docker]
       steps:
       - uses: actions/check
