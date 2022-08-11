@@ -1,9 +1,5 @@
 name: go_frontend
 
-env:
-  DOCKER_USERNAME: ${{ env.DOCKER_USERNAME }}
-  DOCKER_PASSWORD: ${{ env.DOCKER_PASSWORD }}
-
 on:
   push:
     branches: [ main ]
