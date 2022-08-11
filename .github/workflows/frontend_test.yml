@@ -45,6 +45,6 @@ jobs:
     runs-on: self-hosted
     needs: [Build-Push-Docker]
     steps:
-    - uses: actions/check
+    - uses: actions/checkout@v2
     - name: Build the stack
       run: docker-compose up -d
