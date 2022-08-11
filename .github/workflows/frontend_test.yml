@@ -40,10 +40,11 @@ jobs:
         context: backend
         push: true
         tags: yagcis/fortune-cookie-backend:latest
-    Docker-Start:
-      runs-on: self-hosted
-      needs: [Build-Push-Docker]
-      steps:
-      - uses: actions/check
-      - name: Build the stack
-        run: docker-compose up -d
+    
+  Docker-Start:
+    runs-on: self-hosted
+    needs: [Build-Push-Docker]
+    steps:
+    - uses: actions/check
+    - name: Build the stack
+      run: docker-compose up -d
